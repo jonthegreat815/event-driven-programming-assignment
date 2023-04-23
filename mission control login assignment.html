@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--CSC102
+week 3 assignment
+By: Jonathan Adams-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to css file-->
+    <link rel="stylesheet" type = "text/css" href="login css.css">
+    <!--link to javascript file-->
+    <script src = "login code.js"> 
+    </script>
+    <!--title tag with text-->
+    <title>UAT Space Program Login Page</title>
+    <script>
+        //alert
+        var alertText = "You have entered the UAT Space Program page! Press okay to contiue to login.";
+        alert(alertText);
+    </script>
+</head>
+<body>
+    <!--Head tag requirement with text-->
+    <h1>UAT SPACE PROGRAM</h1>
+    <!--logo using uat image-->
+    <center><img src="UATspaceLogo-1.jpg" />
+    <br>
+    <!--paragraph tag requirement-->
+    <p>You have now entered into the UAT Space Program.
+        <br>
+        Please login with your credentials.
+    </p>
+<!--head tag indicating what to do
+    user will input their login credentials-->
+<p id = "loginStatus"> Status of Login</p>
+<form id = "credSubmit" onsubmit = "return false">
+    First Name: <input type = "text" id = "first"/> 
+    <br>
+    Last Name: <input type ="text" id = "last"/>
+    <br>
+    Badge Code: <input type = "number" id = "numPart"/>
+    <input type = "submit" onclick = "checkCreds()"/>
+</form>
+    </center>
+</body>
+</html>
